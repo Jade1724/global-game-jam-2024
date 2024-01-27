@@ -3130,6 +3130,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464131229}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &470752999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
+  m_PrefabInstance: {fileID: 659569681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &472077701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5133,19 +5138,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 766295104}
     m_Modifications:
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0070686
+      value: -1.1532027
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.271
+      value: 1.2749999
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.12241
+      value: 0.8741834
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5153,15 +5158,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2391680189858740002, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5177,7 +5182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7048750260010228544, guid: f2098d622b817456b87b6968cacfb15c, type: 3}
       propertyPath: m_Name
-      value: Launcher
+      value: Fire Extinguisher
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6129,7 +6134,8 @@ Transform:
   m_LocalPosition: {x: 0.14613402, y: 0.996, z: 0.24822664}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 470752999}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &777917384
@@ -21380,4 +21386,3 @@ SceneRoots:
   - {fileID: 766295104}
   - {fileID: 1174452524}
   - {fileID: 922297631}
-  - {fileID: 659569681}
