@@ -56,6 +56,8 @@ public class GameManager : MonoBehaviour
             }
         } else if (currentPhase == CookingPhase.Cooking && isFoodOnBoard) {
             // Transfer food to the cooking pot
+            FoodInPan.ShowFoodInPan();
+            isFoodOnBoard = false;
         } 
         else {
             if (!isCountingDown) {
