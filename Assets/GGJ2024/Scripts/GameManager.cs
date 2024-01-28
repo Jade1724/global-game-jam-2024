@@ -12,11 +12,11 @@ public class GameManager : MonoBehaviour
         Serving
     };
 
-    private const int COOKING_DURATION = 60; 
+    private const int COOKING_DURATION = 300; 
     private const int LIFE_STEAK = 1;
     public int score;
 
-    public CookingPhase currentPhase = CookingPhase.Standby;
+    public static CookingPhase currentPhase = CookingPhase.Standby;
     public int remainingTime = COOKING_DURATION;
     private int remainingLife = LIFE_STEAK;
     private bool isCountingDown;

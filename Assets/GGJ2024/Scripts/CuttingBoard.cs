@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CuttingBoard : MonoBehaviour
 {
-    private int MAX_INGREDIENTS = 3;
+    private int MAX_INGREDIENTS = 1;
     private int currentIngredientsNum = 0;
 
     private void OnCollisionEnter(Collision other) {
-        if (GameManager.instance.currentPhase == GameManager.CookingPhase.Gathering && other.gameObject.CompareTag("Food") && currentIngredientsNum < MAX_INGREDIENTS) {
+        if (GameManager.currentPhase == GameManager.CookingPhase.Gathering && other.gameObject.CompareTag("Food") && currentIngredientsNum < MAX_INGREDIENTS) {
             // Check if the colliding object has a Rigidbody
             Rigidbody otherRigidbody = other.gameObject.GetComponent<Rigidbody>();
             
@@ -22,19 +22,21 @@ public class CuttingBoard : MonoBehaviour
                 GameManager.ingredientsUnderCooking.Add(other.gameObject);
 
                 // Optionally, you may also want to disable the collider to avoid further interactions
-                other.gameObject.GetComponent<Collider>().enabled = false;
+                // other.gameObject.GetComponent<Collider>().enabled = false;
 
                 if (currentIngredientsNum == MAX_INGREDIENTS) {
-                    GameManager.instance.currentPhase = GameManager.CookingPhase.Cutting;
+                    GetComponent<AudioSource>().Play();
+                    GameManager.currentPhase = GameManager.CookingPhase.Cutting;
                 }
             }
         }
 
-        if (GameManager.instance.currentPhase == GameManager.CookingPhase.Cutting && other.gameObject.CompareTag("Destroyer")) {
+        if (GameManager.currentPhase == GameManager.CookingPhase.Cutting && other.gameObject.CompareTag("Destroyer")) {
+            GetComponent<AudioSource>().Play();
             foreach (GameObject obj in GameManager.ingredientsUnderCooking) {
                 obj.GetComponent<Renderer>().enabled = false;
             }
-            GameManager.instance.currentPhase = GameManager.CookingPhase.Cooking;
+            GameManager.currentPhase = GameManager.CookingPhase.Cooking;
         }
     }
 }
