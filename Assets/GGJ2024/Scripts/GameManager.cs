@@ -40,18 +40,21 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentPhase = CookingPhase.Gathering;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (currentPhase != CookingPhase.Standby && !isCountingDown) {
-            isCountingDown = true;
-            InvokeRepeating("CountDownTime", 0f, 1f);
-        } else {
+        if (currentPhase == CookingPhase.Standby) {
             if (isCountingDown) {
+                isCountingDown = false;
                 CancelInvoke("CountDownTime");
+            }
+        } else {
+            if (!isCountingDown) {
+                isCountingDown = true;
+                InvokeRepeating("CountDownTime", 0f, 1f);
             }
         }
     }
