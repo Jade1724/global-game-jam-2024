@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    enum CookingPhase {
+    public enum CookingPhase {
         Standby,
         Gathering,
         Cutting,
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private const int LIFE_STEAK = 1;
     public int score;
 
-    private CookingPhase currentPhase = CookingPhase.Standby;
+    public CookingPhase currentPhase = CookingPhase.Standby;
     public int remainingTime = COOKING_DURATION;
     private int remainingLife = LIFE_STEAK;
     private bool isCountingDown;
