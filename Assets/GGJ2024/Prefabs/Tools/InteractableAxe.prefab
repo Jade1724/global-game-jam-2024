@@ -972,7 +972,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
@@ -997,38 +997,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 233875084286018570}
     m_Modifications:
-    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 51832ba027bb9bc409fdd189fe4792dd, type: 2}
-    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
-    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_Materials.Array.data[2]
-      value: 
-      objectReference: {fileID: 2100000, guid: 79fcff92f6227984fbecd8ee0a2ad6af, type: 2}
-    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_Materials.Array.data[3]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8a5c54ca02d8e8a44a8459b6a3ee3bea, type: 2}
-    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.00000004371139
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4011605589608005922, guid: 822bcce9cc62cc843925c7bc50a045af, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1088,6 +1056,38 @@ PrefabInstance:
     - target: {fileID: 4388694800061094808, guid: 822bcce9cc62cc843925c7bc50a045af, type: 3}
       propertyPath: m_Name
       value: axe_001
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 51832ba027bb9bc409fdd189fe4792dd, type: 2}
+    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 408f4ac95cdc9654ab73c377378ac907, type: 2}
+    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79fcff92f6227984fbecd8ee0a2ad6af, type: 2}
+    - target: {fileID: -7635826562936255635, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a5c54ca02d8e8a44a8459b6a3ee3bea, type: 2}
+    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00000004371139
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: f8b1268f8208a9f4491a00a7a52834e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
