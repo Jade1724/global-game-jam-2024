@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public int remainingTime = COOKING_DURATION;
     private int remainingLife = LIFE_STEAK;
     private bool isCountingDown;
+    private bool isFoodOnBoard;
+    public static List<GameObject> ingredientsUnderCooking;
 
      // Singleton instance
     public static GameManager instance;
@@ -52,7 +54,10 @@ public class GameManager : MonoBehaviour
                 isCountingDown = false;
                 CancelInvoke("CountDownTime");
             }
-        } else {
+        } else if (currentPhase == CookingPhase.Cooking && isFoodOnBoard) {
+            // Transfer food to the cooking pot
+        } 
+        else {
             if (!isCountingDown) {
                 isCountingDown = true;
                 InvokeRepeating("CountDownTime", 0f, 1f);

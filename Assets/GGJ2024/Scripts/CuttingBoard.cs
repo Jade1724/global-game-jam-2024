@@ -17,10 +17,24 @@ public class CuttingBoard : MonoBehaviour
                 // Change the Rigidbody type to Static
                 otherRigidbody.isKinematic = true;
                 currentIngredientsNum++;
+                
+                // Put the other object into ingredientsBoard;
+                GameManager.ingredientsUnderCooking.Add(other.gameObject);
 
                 // Optionally, you may also want to disable the collider to avoid further interactions
                 other.gameObject.GetComponent<Collider>().enabled = false;
+
+                if (currentIngredientsNum == MAX_INGREDIENTS) {
+                    GameManager.instance.currentPhase = GameManager.CookingPhase.Cutting;
+                }
             }
+        }
+
+        if (GameManager.instance.currentPhase == GameManager.CookingPhase.Cutting && other.gameObject.CompareTag("Destroyer")) {
+            foreach (GameObject obj in GameManager.ingredientsUnderCooking) {
+                obj.GetComponent<Renderer>().enabled = false;
+            }
+            GameManager.instance.currentPhase = GameManager.CookingPhase.Cooking;
         }
     }
 }
