@@ -180,4 +180,7 @@ $RECYCLE.BIN/
 Documentation/
 xr-interaction-demo_BurstDebugInformation_DoNotShip
 
+# Debug information
+global-game-jam-2024_BurstDebugInformation_DoNotShip/
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,visualstudiocode 
